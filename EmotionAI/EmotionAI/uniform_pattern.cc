@@ -32,10 +32,10 @@ void UniformPattern::LoadUniformPattern()
 }
 
 /*
-@Uniform pattern 降维.
-@入参: V, 待降维特征数值.
-@出参: 无.
-@返回值: V降维后的数值（-1表示V为非等价模式类）.
+@Uniform pattern dimensionality reduction.
+@Input parameters: V, the feature value to be reduced.
+@Output: None.
+@Return value: The value of V after dimensionality reduction (-1 indicates that V is a non-equivalent mode class)
 */
 int UniformPattern::IndexOf(const unsigned V)
 {
@@ -58,5 +58,5 @@ int UniformPattern::IndexOf(const unsigned V)
             begin = mid + 1;
         }
     }
-    return -1; /*-1表示V为非等价类.*/
+    return -1; /*-1 means V is a non-equivalence class*/
 }

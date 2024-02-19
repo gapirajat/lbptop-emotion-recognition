@@ -1,5 +1,5 @@
 /*
-@Uniform Pattern, 原始特征数据降维.
+@Uniform Pattern, 鍘熷鐗瑰緛鏁版嵁闄嶇淮.
 */
 #ifndef UNIFORM_PATTERN_H
 #define UNIFORM_PATTERN_H
@@ -14,12 +14,12 @@ public:
     UniformPattern();
     virtual ~UniformPattern();
 
-    void LoadUniformPattern();      /*加载Uniform Pattern.*/
-    int IndexOf(const unsigned V);  /*Uniform Pattern 降维.*/
+    void LoadUniformPattern();      /*Load Uniform Pattern.*/
+    int IndexOf(const unsigned V);  /*Uniform Pattern Dimensionality Reduction.*/
 
 private:
-    Mat uniform_pattern_;           /*等价模式序列, 数据均为等价模式类.*/
-    int bits_;                      /*采样点数量.*/
+    Mat uniform_pattern_;           /*Equivalent pattern sequence, data are all equivalent pattern classes*/
+    int bits_;                      /*Number of sampling points*/
 };
 
 #endif /*UNIFORM_PATTERN_H*/
